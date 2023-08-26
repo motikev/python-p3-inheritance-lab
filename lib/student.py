@@ -10,3 +10,9 @@ class Student(User):
     
     def learn(self, knowledge):
         self.knowledge.append(knowledge)
+
+# Example usage:
+student = Student("Alice", "Smith")
+student.learn("Python programming")
+student.learn("Data structures")
+print(student.knowledge)  # Output: ['Python programming', 'Data structures']
